@@ -8,9 +8,8 @@ This project shows how to run Ollama's models, including the `mistral` model, in
 
     -   First, you need to install and load the `colab-xterm` extension to use a terminal in Colab. Run these commands:\
 
-
-        python
 ```
+        # python
         !pip install colab-xterm %load_ext colabxterm %xterm
 ```
 
@@ -18,8 +17,8 @@ This project shows how to run Ollama's models, including the `mistral` model, in
 
     -   Once the terminal is active, you can install Ollama by running this command:
 
-        bash
 ```
+        # bash
         curl https://ollama.ai/install.sh | sh
 ```
 
@@ -27,18 +26,17 @@ This project shows how to run Ollama's models, including the `mistral` model, in
 
     -   After installing Ollama, start the Ollama server and pull the `mistral` model:
 
-        bash
 ```
+        # bash
         ollama serve & ollama pull mistral
 ```
 
 4.  **Verify the Model**:
 
     -   Check if the model has been installed correctly by running the following:
-
-        bash
         
 ```
+        # bash
         !ollama list
 ```
 
@@ -46,9 +44,8 @@ This project shows how to run Ollama's models, including the `mistral` model, in
 
     -   Finally, install the `langchain-ollama` package to connect with Ollama models:
 
-        python
-
 ```
+        # python
         %pip install -U langchain-ollama
 ```
 
@@ -58,9 +55,9 @@ After setting everything up, you can use the model to generate responses to ques
 
 Here's a sample code you can run:
 
-python
 
 ```
+# python
 
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_ollama.llms import OllamaLLM
